@@ -23,6 +23,13 @@ public class UserService {
 	
 	@Autowired LoanOfferService loanservice;
 	
+	/**
+	 * This method used to addd user with validation like age>25,salary>10000,property value>500000
+	 * POJO is mapped with Entity with using Dto
+	 * return list of offer 
+	 *
+	 */
+	
 	public ResponseEntity<Object> addUser(UserDto userdto)
 	{
 		int age=Period.between(userdto.getDobdto(), LocalDate.now()).getYears();

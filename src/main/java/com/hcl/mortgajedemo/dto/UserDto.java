@@ -2,6 +2,13 @@ package com.hcl.mortgajedemo.dto;
 
 import java.time.LocalDate;
 
+/**
+ * This DTO class to map entity in our application
+ * 
+ * 
+ *
+ */
+
 public class UserDto 
 {
 

@@ -29,7 +29,12 @@ public class MortgajeController
 	@Autowired UserService userservice;
 	
 	
-	
+	/**
+	 * This method used to get user with specified id
+	 * @PathVariable used to get id from url
+	 * 
+	 *
+	 */
 	
 	@GetMapping("/{id}")
 	public Optional<UserDetails> getEmployeeById(@PathVariable Long id){
@@ -37,6 +42,13 @@ public class MortgajeController
 	}
 	
 	
+	
+	/**
+	 * This method used to add user in db and show loan offer accoding to property valus
+	 * @RequestBody will fetch object from ui
+	 * 
+	 *return List of LoanOffers
+	 */
 	@PostMapping("/adduser")
 	public ResponseEntity<Object> addUser(@RequestBody UserDto user){
 		

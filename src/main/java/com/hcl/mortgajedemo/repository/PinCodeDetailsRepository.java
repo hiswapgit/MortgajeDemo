@@ -8,7 +8,12 @@ import com.hcl.mortgajedemo.entity.PinCodeDetails;
 
 @Repository
 public interface PinCodeDetailsRepository extends JpaRepository<PinCodeDetails, Long>{
-
+	/**
+	 * 
+	 * get pincodedeatils object
+	 * 
+	 *
+	 */
 	public PinCodeDetails findByPincode(String pin);
 
 }
